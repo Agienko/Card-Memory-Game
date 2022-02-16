@@ -72,3 +72,15 @@ export function rotateImg(targ, num) {
         targ.src = `img/cards/${num}.jpg`
     }, 200 );
 }
+
+export function scoreAnimate(score, l, t){
+    let bubble = document.createElement('h1')
+    bubble.textContent = score.textContent;
+    bubble.style.left = `${l}px`
+    bubble.style.top = `${t}px`
+    document.body.append(bubble);
+    (+score.textContent > 0) ? bubble.style.color = 'rgb(23, 201, 0)' 
+    : bubble.style.color = 'rgb(163, 53, 53)';
+    setTimeout(() => bubble.className = 'bubble', 0)
+    setTimeout(() => bubble.remove(), 600)
+}

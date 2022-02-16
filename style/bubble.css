@@ -1,0 +1,6 @@
+.bubble {
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+    transform: translateY(-50px) skew(20deg) scale(1.7);
+    opacity: 0;
+}
