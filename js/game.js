@@ -7,8 +7,6 @@ let isOpened = 0;
 let checkIndex;
 let targ = 0;
 
-
-
 cardsIn.addEventListener('click', function(){
    if(event.target.tagName === 'IMG') {
        click.play()
@@ -34,7 +32,7 @@ cardsIn.addEventListener('click', function(){
                 del.pause()
                 del.currentTime = '0'
                 del.play()
-                scoreAnimate(score, l, t)
+                scoreAnimate(score, l, t, true)
                 removeImgs(cardsIn)
                 checkWins(cardsIn)
             }, 1200);
@@ -42,7 +40,6 @@ cardsIn.addEventListener('click', function(){
             setTimeout(() => {
                 let l = targ.getBoundingClientRect().x + targ.getBoundingClientRect().width/2;
                 let t = targ.getBoundingClientRect().y + targ.getBoundingClientRect().height/2;
-                
                 back.pause()
                 back.currentTime = '0'
                 back.play()
@@ -50,7 +47,7 @@ cardsIn.addEventListener('click', function(){
                 checkIndex = undefined; 
                 isOpened = 0;
                 score.textContent -= 5*select.value/2;
-                scoreAnimate(score, l, t)
+                scoreAnimate(score, l, t, false)
                 closeImgs(cardsIn)
             }, 1200);
         }
