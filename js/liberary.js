@@ -20,7 +20,10 @@ export function insertCards(arr, parent){
 }
 export function closeImgs(parent){
     for (let child of parent.children){
+       if (child.style.transform === 'rotateY(180deg)') child.style.transform = '';
+       setTimeout (()=>{  
         child.src = 'img/cards/none.jpg'
+        }, 200 );  
     }
 }
 export function removeImgs(parent) {
@@ -62,4 +65,10 @@ export function checkWins(parent) {
             btn.remove()
         })
     }
+}
+export function rotateImg(targ, num) {
+    targ.style.transform = ('rotateY(180deg)')
+    setTimeout (()=>{  
+        targ.src = `img/cards/${num}.jpg`
+    }, 200 );
 }

@@ -2,24 +2,28 @@ import cardsIn from "./start.js";
 import {closeImgs, removeImgs, checkWins} from './liberary.js'
 import { score, select } from "./start.js"
 import{click, back, del} from './audio.js'
+import {rotateImg} from './liberary.js'
 
 let isOpened = 0;
 let checkIndex;
 let targ = 0;
+
+
+
 cardsIn.addEventListener('click', function(){
    if(event.target.tagName === 'IMG') {
        click.play()
     if (isOpened === 0 && event.target.style.opacity !== '0') {
         targ = event.target
-        isOpened++;
-        let num = event.target.getAttribute('index')
+        isOpened++
+        let num = targ.getAttribute('index')
         checkIndex = num;
-        event.target.src = `img/cards/${num}.jpg`
-        
+        rotateImg(targ, num)
     } else if (isOpened === 1 && targ !== event.target && event.target.style.opacity !== '0') {
         isOpened++;
+        targ = event.target
         let num = event.target.getAttribute('index')
-            event.target.src = `img/cards/${num}.jpg`;
+        rotateImg(targ, num)
         if ( checkIndex === num ) {
             setTimeout(() => {
                 targ = 0;

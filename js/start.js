@@ -3,8 +3,8 @@ import { cards } from "./index.js"
 
 export let date;
 export let score = document.querySelector('.score');
-const btnStart = document.querySelector('#start')
 export const select = document.querySelector('select')
+const btnStart = document.querySelector('#start')
 const cardsIn = document.querySelector('.cardsIn')
 let end = document.querySelector('.end');
 
@@ -30,5 +30,4 @@ exit.addEventListener('click', function(){
     select.options[0].removeAttribute('disabled')
     select.selectedIndex = 0
 })
-
 export default cardsIn;

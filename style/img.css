@@ -1,0 +1,14 @@
+img{
+    justify-self: center;
+    margin: 5px;
+    width: 120px;
+    border: 4px solid rgb(14, 98, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(2, 5, 10, 0.658);
+    transition: all 0.4s linear;
+    transform:   scaleY(180deg);
+}
+
+/* img:hover{
+  transform:   rotateY(180deg);
+} */
