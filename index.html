@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/info.css">
+    <link rel="stylesheet" href="style/end.css">
+    <title>Card memory game</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li id="start">Новая игра</li>
+            <li class="level">
+                    <select id="select">
+                        <option value="4">2x2 Уровень 1</option>
+                        <option value="6" disabled>3x2 Уровень 2</option>  
+                        <option value="8" disabled>4x2 Уровень 3</option>  
+                        <option value="10" disabled>5x2 Уровень 4</option>  
+                        <option value="12" disabled>3x4 Уровень 5</option>  
+                        <option value="16" disabled>4x4 Уровень 6</option>  
+                        <option value="18" disabled>6x3 Уровень 7</option>  
+                        <option value="20" disabled>5x4 Уровень 8</option>  
+                        <option value="24" disabled>6x4 Уровень 9</option>  
+                        <option value="30" disabled>6x5 Уровень 10</option>  
+                    </select>
+            </li>
+            <li class="author">Об авторе</li>
+            <li id="exit">Обнулить</li>
+            <li class="score">0</li>
+        </ul>
+    </header>
+    <main>
+        <div class="cardsIn"></div>
+        <div class="end"></div>
+    </main>
+    <div class="info">
+        <div class="wrap">
+            <span class="close">X</span>
+        </div>
+        <p> Автор: Агиенко Юрий. </p>
+        <p>В рамках учебного проeкта.</p>
+        <p>2022г</p>
+    </div>
+    <script src="js/start.js" type="module"></script>
+    <script src="js/modal.js" type="module"></script>
+    <script src="js/game.js" type="module"></script>
+</body>
+</html>

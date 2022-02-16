@@ -1,0 +1,31 @@
+.info{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    min-height: 200px;
+    width: 30vw;
+    height: 30vh;
+    background: rgb(203, 225, 255);
+    top: 50px;
+    left: 400px;
+    text-align: end;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px black;
+}
+.info .wrap {
+    background: rgb(40, 117, 204);
+    border-radius: 7px 7px 1px 1px;
+}
+.info span{
+    padding: 5px;
+    color:rgb(191, 196, 201);
+}
+.info p{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.info span:hover{
+    cursor: pointer;
+    color:azure;
+}

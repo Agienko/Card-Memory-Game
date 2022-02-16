@@ -1,0 +1,26 @@
+.end{
+    display: grid;
+    justify-content: center;
+    margin: 150px;
+    position: absolute;
+   color: rgb(185, 70, 41);
+}
+.end p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.end button {
+    justify-self: center;
+    margin-top: 30px;
+    width: 100px;
+    height: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(91, 142, 236, 0.308);
+    border-radius: 8px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+.end button:hover{
+    opacity: 1;
+}
